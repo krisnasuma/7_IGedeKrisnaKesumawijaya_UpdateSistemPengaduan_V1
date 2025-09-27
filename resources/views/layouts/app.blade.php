@@ -19,15 +19,31 @@
         <div class="container">
             <a class="navbar-brand" href="/">Sistem Layanan</a>
             <div class="navbar-nav ms-auto">
+
                 @auth('masyarakat')
                     <span class="navbar-text me-3">Selamat datang, {{ Auth::guard('masyarakat')->user()->nama }}</span>
-                    <a class="nav-link" href="{{ route('masyarakat.dashboard') }}">Dashboard</a>
-                    <form method="POST" action="{{ route('masyarakat.logout') }}" class="d-inline">
-                        @csrf
-                        <button type="submit" class="nav-link btn btn-link">Logout</button>
-                    </form>
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="{{ route('masyarakat.dashboard') }}">Dashboard</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Profil</a>
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="{{ route('masyarakat.profil') }}">Profil Saya</a></li>
+                                
+                                <li><a class="dropdown-item" href="{{ route('pengajuan.index') }}">Pengajuan Saya</a></li>
+
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <form method="POST" action="{{ route('masyarakat.logout') }}">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item">Logout</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 @endauth
-                
+ 
                 @auth('admin')
                     <span class="navbar-text me-3">Admin: {{ Auth::guard('admin')->user()->nama }}</span>
                     <a class="nav-link" href="{{ route('admin.dashboard') }}">Dashboard</a>

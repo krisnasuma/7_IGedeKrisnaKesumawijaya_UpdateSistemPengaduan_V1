@@ -46,6 +46,18 @@
             </div>
         </div>
     </div>
+
+    <!-- Tambahkan di bagian stats cards -->
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">{{ $stats['masyarakat_belum_verifikasi'] }}</h5>
+                <p class="card-text">Belum Diverifikasi</p>
+                <a href="{{ route('admin.masyarakat.belum-verifikasi') }}" class="btn btn-warning btn-sm">Kelola</a>
+            </div>
+        </div>
+    </div>
+    
 </div>
 
 <div class="row mt-4">
@@ -75,5 +87,6 @@
             </div>
         </div>
     </div>
+
 </div>
 @endsection

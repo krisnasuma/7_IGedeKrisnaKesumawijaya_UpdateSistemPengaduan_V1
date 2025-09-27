@@ -66,5 +66,22 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 "# 7_IGedeKrisnaKesumawijaya" 
 "# 7_IGedeKrisnaKesumawijaya_UpdateSistemPengaduan_V0" 
-"# 7_IGedeKrisnaKesumawijaya_UpdateSistemPengaduan_V1" 
-"# 7_IGedeKrisnaKesumawijaya_UpdateSistemPengaduan_V1" 
+"# 7_IGedeKrisnaKesumawijaya_UpdateSistemPengaduan_V1"
+
+## Url
+Home: http://localhost:8000 <br>
+Login Masyarakat: http://localhost:8000/masyarakat/login <br>
+Daftar Masyarakat: http://localhost:8000/masyarakat/register <br>
+Login Admin: http://localhost:8000/admin/login <br>
+
+## Sample Users
+Masyarakat: <br>
+hasda@gmail.com <br>
+123456 <br>
+Admin: <br>
+admin@example.com <br>
+password123 <br>
+
+## Before
+https://github.com/krisnasuma/7_IGedeKrisnaKesumawijaya <br>
+https://github.com/krisnasuma/7_IGedeKrisnaKesumawijaya_UpdateSistemPengaduan_V0
